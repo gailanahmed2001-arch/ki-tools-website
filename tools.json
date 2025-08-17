@@ -1,128 +1,62 @@
 [
-    {
-        "name": "ChatGPT",
-        "description": "KI-Textgenerator von OpenAI.",
-        "link": "DEIN_AFFILIATE_LINK_CHATGPT",
-        "type": "top"
-    },
-    {
-        "name": "DALL·E",
-        "description": "KI-Bildergenerator von OpenAI.",
-        "link": "DEIN_AFFILIATE_LINK_DALLE",
-        "type": "top"
-    },
-    {
-        "name": "Copy.ai",
-        "description": "Automatische Texterstellung für Marketing.",
-        "link": "DEIN_AFFILIATE_LINK_COPYAI",
-        "type": "neu"
-    },
-    {
-        "name": "Jasper.ai",
-        "description": "KI-Texter für Content-Erstellung.",
-        "link": "DEIN_AFFILIATE_LINK_JASPER",
-        "type": "neu"
-    },
-    {
-        "name": "Perplexity AI",
-        "description": "KI-gestützter Antwortgenerator mit Quellenangabe.",
-        "link": "DEIN_AFFILIATE_LINK_PERPLEXITY",
-        "type": "top"
-    },
-    {
-        "name": "Midjourney",
-        "description": "KI-Bildergenerator für kreative Designs.",
-        "link": "https://midninja.com?via=gailan",
-        "type": "top"
-    },
-    {
-        "name": "Runway",
-        "description": "KI-gestützte Videobearbeitung und -generierung.",
-        "link": "DEIN_AFFILIATE_LINK_RUNWAY",
-        "type": "neu"
-    },
-    {
-        "name": "Synthesia",
-        "description": "KI-Video-Generator mit Avataren in 140+ Sprachen.",
-        "link": "https://www.synthesia.io/?via=gailan",
-        "type": "neu"
-    },
-    {
-        "name": "HeyGen",
-        "description": "KI-Video-Generator mit stimmlicher Personalisierung.",
-        "link": "DEIN_AFFILIATE_LINK_HEYGEN",
-        "type": "neu"
-    },
-    {
-        "name": "Grammarly",
-        "description": "KI-gestützte Rechtschreib- und Grammatikprüfung.",
-        "link": "DEIN_AFFILIATE_LINK_GRAMMARLY",
-        "type": "top"
-    },
-    {
-        "name": "Notion AI",
-        "description": "KI-gestützte Notizen- und Aufgabenverwaltung.",
-        "link": "DEIN_AFFILIATE_LINK_NOTION",
-        "type": "neu"
-    },
-    {
-        "name": "Zapier AI",
-        "description": "Automatisierung von Workflows mit KI.",
-        "link": "DEIN_AFFILIATE_LINK_ZAPIER",
-        "type": "neu"
-    },
-    {
-        "name": "Claude",
-        "description": "KI-Chatbot von Anthropic.",
-        "link": "DEIN_AFFILIATE_LINK_CLAUDE",
-        "type": "neu"
-    },
-    {
-        "name": "Gemini",
-        "description": "KI-Chatbot von Google DeepMind.",
-        "link": "DEIN_AFFILIATE_LINK_GEMINI",
-        "type": "neu"
-    },
-    {
-        "name": "CopySmith",
-        "description": "KI-gestützte Texterstellung für E-Commerce.",
-        "link": "DEIN_AFFILIATE_LINK_COPYSMITH",
-        "type": "neu"
-    },
-    {
-        "name": "Surfer SEO",
-        "description": "KI-gestützte SEO-Optimierung.",
-        "link": "DEIN_AFFILIATE_LINK_SURFERSEO",
-        "type": "neu"
-    },
-    {
-        "name": "Writer.com",
-        "description": "KI-gestützte Texterstellung für Teams.",
-        "link": "DEIN_AFFILIATE_LINK_WRITER",
-        "type": "neu"
-    },
-    {
-        "name": "LALAL.AI",
-        "description": "KI-gestützte Audio-Trennung.",
-        "link": "DEIN_AFFILIATE_LINK_LALALAI",
-        "type": "neu"
-    },
-    {
-        "name": "Pika Labs",
-        "description": "KI-gestützte Videobearbeitung.",
-        "link": "DEIN_AFFILIATE_LINK_PIKALABS",
-        "type": "neu"
-    },
-    {
-        "name": "Consensus",
-        "description": "KI-gestützte Literaturrecherche.",
-        "link": "DEIN_AFFILIATE_LINK_CONSENSUS",
-        "type": "neu"
-    },
-    {
-        "name": "Easy Thesis",
-        "description": "KI-gestützte Unterstützung für wissenschaftliche Arbeiten.",
-        "link": "DEIN_AFFILIATE_LINK_EASYTHESIS",
-        "type": "neu"
-    }
+  {
+    "name": "Copy.ai",
+    "description": "KI-gestütztes Tool zum schnellen Erstellen von Texten.",
+    "link": "https://affiliate.copy.ai/?ref=DEINCODE",
+    "image": "https://seeklogo.com/images/C/copy-ai-logo-6E8D09BEB0-seeklogo.com.png"
+  },
+  {
+    "name": "Jasper AI",
+    "description": "Professionelles KI-Text-Tool für Marketing, Blogs und Ads.",
+    "link": "https://jasper.ai?utm_source=affiliate&ref=DEINCODE",
+    "image": "https://seeklogo.com/images/J/jasper-ai-logo-0A2FAD0E8F-seeklogo.com.png"
+  },
+  {
+    "name": "Canva",
+    "description": "Design-Tool mit integrierten KI-Funktionen (Texte, Bilder, Vorlagen).",
+    "link": "https://partner.canva.com/DEINCODE",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Canva_Logo.png"
+  },
+  {
+    "name": "Grammarly",
+    "description": "KI für bessere Rechtschreibung, Grammatik und Schreibstil.",
+    "link": "https://grammarly.com/affiliate/DEINCODE",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Grammarly_logo.png"
+  },
+  {
+    "name": "Notion AI",
+    "description": "Organisiere deine Projekte und nutze die eingebaute KI für Texte.",
+    "link": "https://notion.so?affiliate=DEINCODE",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
+  },
+  {
+    "name": "Surfer SEO",
+    "description": "SEO-Tool mit KI zur Optimierung von Blogartikeln.",
+    "link": "https://surferseo.com/affiliate/DEINCODE",
+    "image": "https://surferseo.com/favicon.ico"
+  },
+  {
+    "name": "Writesonic",
+    "description": "KI-Writer mit Blog, Ads und Landingpage-Funktionen.",
+    "link": "https://writesonic.com?via=DEINCODE",
+    "image": "https://writesonic.com/favicon.ico"
+  },
+  {
+    "name": "Framer AI",
+    "description": "Webseitenbaukasten mit integrierter künstlicher Intelligenz.",
+    "link": "https://framer.com/affiliate/DEINCODE",
+    "image": "https://framerusercontent.com/images/framer-icon.png"
+  },
+  {
+    "name": "Synthesia",
+    "description": "KI-Videogenerator, mit dem du realistisch aussehende Avatare erstellen kannst.",
+    "link": "https://www.synthesia.io/?via=gailan",
+    "image": "https://assets-global.website-files.com/607f3c8bfc9e9d8a2a1f1b1f/608aa7c46f9b2f05d9e5f0ce_synthesia-logo.png"
+  },
+  {
+    "name": "Midjourney",
+    "description": "Eines der bekanntesten KI-Tools zur Erstellung beeindruckender Bilder.",
+    "link": "https://midninja.com?via=gailan",
+    "image": "https://midjourney.com/apple-touch-icon.png"
+  }
 ]
