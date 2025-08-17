@@ -32,7 +32,7 @@
     {
         "name": "Midjourney",
         "description": "KI-Bildergenerator für kreative Designs.",
-        "link": "DEIN_AFFILIATE_LINK_MIDJOURNEY",
+        "link": "https://midninja.com?via=gailan",
         "type": "top"
     },
     {
@@ -44,7 +44,7 @@
     {
         "name": "Synthesia",
         "description": "KI-Video-Generator mit Avataren in 140+ Sprachen.",
-        "link": "DEIN_AFFILIATE_LINK_SYNTHESIA",
+        "link": "https://www.synthesia.io/?via=gailan",
         "type": "neu"
     },
     {
@@ -126,3 +126,4 @@
         "type": "neu"
     }
 ]
+
