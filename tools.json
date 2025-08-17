@@ -1,0 +1,26 @@
+[
+    {
+        "name": "ChatGPT",
+        "description": "KI-Textgenerator von OpenAI.",
+        "link": "DEIN_AFFILIATE_LINK_CHATGPT",
+        "type": "top"
+    },
+    {
+        "name": "DALL·E",
+        "description": "KI-Bildergenerator von OpenAI.",
+        "link": "DEIN_AFFILIATE_LINK_DALLE",
+        "type": "top"
+    },
+    {
+        "name": "Copy.ai",
+        "description": "Automatische Texterstellung für Marketing.",
+        "link": "DEIN_AFFILIATE_LINK_COPYAI",
+        "type": "neu"
+    },
+    {
+        "name": "Jasper.ai",
+        "description": "KI-Texter für Content-Erstellung.",
+        "link": "DEIN_AFFILIATE_LINK_JASPER",
+        "type": "neu"
+    }
+]
