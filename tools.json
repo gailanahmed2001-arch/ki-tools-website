@@ -22,5 +22,107 @@
         "description": "KI-Texter für Content-Erstellung.",
         "link": "DEIN_AFFILIATE_LINK_JASPER",
         "type": "neu"
+    },
+    {
+        "name": "Perplexity AI",
+        "description": "KI-gestützter Antwortgenerator mit Quellenangabe.",
+        "link": "DEIN_AFFILIATE_LINK_PERPLEXITY",
+        "type": "top"
+    },
+    {
+        "name": "Midjourney",
+        "description": "KI-Bildergenerator für kreative Designs.",
+        "link": "DEIN_AFFILIATE_LINK_MIDJOURNEY",
+        "type": "top"
+    },
+    {
+        "name": "Runway",
+        "description": "KI-gestützte Videobearbeitung und -generierung.",
+        "link": "DEIN_AFFILIATE_LINK_RUNWAY",
+        "type": "neu"
+    },
+    {
+        "name": "Synthesia",
+        "description": "KI-Video-Generator mit Avataren in 140+ Sprachen.",
+        "link": "DEIN_AFFILIATE_LINK_SYNTHESIA",
+        "type": "neu"
+    },
+    {
+        "name": "HeyGen",
+        "description": "KI-Video-Generator mit stimmlicher Personalisierung.",
+        "link": "DEIN_AFFILIATE_LINK_HEYGEN",
+        "type": "neu"
+    },
+    {
+        "name": "Grammarly",
+        "description": "KI-gestützte Rechtschreib- und Grammatikprüfung.",
+        "link": "DEIN_AFFILIATE_LINK_GRAMMARLY",
+        "type": "top"
+    },
+    {
+        "name": "Notion AI",
+        "description": "KI-gestützte Notizen- und Aufgabenverwaltung.",
+        "link": "DEIN_AFFILIATE_LINK_NOTION",
+        "type": "neu"
+    },
+    {
+        "name": "Zapier AI",
+        "description": "Automatisierung von Workflows mit KI.",
+        "link": "DEIN_AFFILIATE_LINK_ZAPIER",
+        "type": "neu"
+    },
+    {
+        "name": "Claude",
+        "description": "KI-Chatbot von Anthropic.",
+        "link": "DEIN_AFFILIATE_LINK_CLAUDE",
+        "type": "neu"
+    },
+    {
+        "name": "Gemini",
+        "description": "KI-Chatbot von Google DeepMind.",
+        "link": "DEIN_AFFILIATE_LINK_GEMINI",
+        "type": "neu"
+    },
+    {
+        "name": "CopySmith",
+        "description": "KI-gestützte Texterstellung für E-Commerce.",
+        "link": "DEIN_AFFILIATE_LINK_COPYSMITH",
+        "type": "neu"
+    },
+    {
+        "name": "Surfer SEO",
+        "description": "KI-gestützte SEO-Optimierung.",
+        "link": "DEIN_AFFILIATE_LINK_SURFERSEO",
+        "type": "neu"
+    },
+    {
+        "name": "Writer.com",
+        "description": "KI-gestützte Texterstellung für Teams.",
+        "link": "DEIN_AFFILIATE_LINK_WRITER",
+        "type": "neu"
+    },
+    {
+        "name": "LALAL.AI",
+        "description": "KI-gestützte Audio-Trennung.",
+        "link": "DEIN_AFFILIATE_LINK_LALALAI",
+        "type": "neu"
+    },
+    {
+        "name": "Pika Labs",
+        "description": "KI-gestützte Videobearbeitung.",
+        "link": "DEIN_AFFILIATE_LINK_PIKALABS",
+        "type": "neu"
+    },
+    {
+        "name": "Consensus",
+        "description": "KI-gestützte Literaturrecherche.",
+        "link": "DEIN_AFFILIATE_LINK_CONSENSUS",
+        "type": "neu"
+    },
+    {
+        "name": "Easy Thesis",
+        "description": "KI-gestützte Unterstützung für wissenschaftliche Arbeiten.",
+        "link": "DEIN_AFFILIATE_LINK_EASYTHESIS",
+        "type": "neu"
     }
 ]
