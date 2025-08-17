@@ -1,1 +1,15 @@
+/ (Root deines Repos)
+  |-- index.html
+  |-- tools.json
+  |-- /images
+        |-- copyai.png
+        |-- jasper.png
+        |-- canva.png
+        |-- grammarly.png
+        |-- notion.png
+        |-- surferseo.png
+        |-- writesonic.png
+        |-- framer.png
+        |-- synthesia.png
+        |-- midjourney.png
 
