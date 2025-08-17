@@ -1,21 +1,174 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KI-Tools Übersicht</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KI Tools Sammlung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: #0070f3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .search-bar {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .tools-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .tool-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .tool-card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .tool-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .tool-card a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #0070f3;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .tool-card a:hover {
+      background: #005bb5;
+    }
+
+    .dark-mode {
+      background: #121212;
+      color: #eee;
+    }
+
+    .dark-mode .tool-card {
+      background: #1e1e1e;
+      color: #ddd;
+      box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+    }
+
+    .dark-mode header {
+      background: #111;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: white;
+      color: #0070f3;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .dark-mode .toggle-btn {
+      background: #333;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>KI-Tools Übersicht</h1>
-        <div class="filters">
-            <button onclick="filterTools('all')">Alle</button>
-            <button onclick="filterTools('top')">Top-Tools</button>
-            <button onclick="filterTools('neu')">Neu</button>
-        </div>
-    </header>
-    <main id="tools-container"></main>
-    <script src="script.js"></script>
+  <header>
+    <h1>🚀 KI Tools Sammlung</h1>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="🔍 Suche nach Tools..." onkeyup="filterTools()">
+  </div>
+
+  <div class="tools-container" id="toolsContainer"></div>
+
+  <script>
+    async function loadTools() {
+      const response = await fetch('tools.json');
+      const tools = await response.json();
+      renderTools(tools);
+      window.allTools = tools;
+    }
+
+    function renderTools(tools) {
+      const container = document.getElementById('toolsContainer');
+      container.innerHTML = '';
+      tools.forEach(tool => {
+        const card = document.createElement('div');
+        card.className = 'tool-card';
+        card.innerHTML = `
+          <h2>${tool.name}</h2>
+          <p>${tool.description}</p>
+          <a href="${tool.link}" target="_blank">👉 Jetzt testen</a>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterTools() {
+      const searchValue = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = window.allTools.filter(tool =>
+        tool.name.toLowerCase().includes(searchValue) ||
+        tool.description.toLowerCase().includes(searchValue)
+      );
+      renderTools(filtered);
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    loadTools();
+  </script>
 </body>
 </html>
