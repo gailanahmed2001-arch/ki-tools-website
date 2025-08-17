@@ -78,30 +78,14 @@
       border-radius: 12px;
       text-decoration: none;
       font-weight: 600;
-      color: white;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.3s ease;
     }
     .card a:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      filter: brightness(0.9);
     }
-    /* Individuelle Button-Farben */
-    .synthesia { background: #1a73e8; }
-    .synthesia:hover { background: #1558b0; }
-
-    .midjourney { background: #ff0080; }
-    .midjourney:hover { background: #c60066; }
-
-    .chatgpt { background: #10a37f; }
-    .chatgpt:hover { background: #0a6a56; }
-
-    .notionai { background: #000000; }
-    .notionai:hover { background: #333333; }
-
-    .copyai { background: #ff6b6b; }
-    .copyai:hover { background: #cc5555; }
-
     footer {
       text-align: center;
       padding: 2rem;
@@ -127,21 +111,41 @@
 </footer>
 
 <script>
+  // Prüft, ob Farbe dunkel ist
+  function isDarkColor(hex) {
+    const r = parseInt(hex.substr(1,2),16);
+    const g = parseInt(hex.substr(3,2),16);
+    const b = parseInt(hex.substr(5,2),16);
+    const brightness = (r*299 + g*587 + b*114)/1000;
+    return brightness < 128;
+  }
+
+  // Button-Farben der Tools
+  const toolColors = {
+    "Synthesia": "#1a73e8",
+    "Midjourney": "#ff0080",
+    "ChatGPT": "#10a37f",
+    "Notion AI": "#000000",
+    "CopyAI": "#ff6b6b"
+  };
+
   fetch('tools.json')
     .then(response => response.json())
     .then(tools => {
       const container = document.getElementById('tools-container');
-      tools.forEach((tool, index) => {
+      tools.forEach((tool,index) => {
         const card = document.createElement('div');
         card.classList.add('card');
-        card.style.animationDelay = `${index * 0.1}s`; // leichte Animation versetzt
-        // Button-Klasse nach Tool-Name klein geschrieben, keine Leerzeichen
-        const btnClass = tool.name.toLowerCase().replace(/\s/g,'');
+        card.style.animationDelay = `${index*0.1}s`;
+
+        const bgColor = toolColors[tool.name] || "#4b5563"; // Fallback-Grau
+        const textColor = isDarkColor(bgColor) ? "#ffffff" : "#000000";
+
         card.innerHTML = `
           <img src="${tool.image}" alt="${tool.name} Logo">
           <h2>${tool.name}</h2>
           <p>${tool.description}</p>
-          <a href="${tool.link}" target="_blank" class="${btnClass}">Jetzt ausprobieren</a>
+          <a href="${tool.link}" target="_blank" style="background-color:${bgColor}; color:${textColor}">Jetzt ausprobieren</a>
         `;
         container.appendChild(card);
       });
